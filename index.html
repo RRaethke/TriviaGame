@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Trivia Game</title>
+
+		<!-- Link in CSS Files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	</head>
+	<body>
+
+		<!-- Start of the game -->
+		<div id = start_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo">Marvel Trivia!</h1>
+
+			<button id = start_button>Start</button>
+		</div>
+
+
+		<!-- During Gameplay Container -->
+		<div id = mid_game_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo">Marvel Trivia</h1>
+
+			<!-- Game Timer -->
+			<h1 id = "timer_line">Time Remaining: <span id = "timer_number">60 Seconds</span></h1>
+
+			<!-- Game Questions -->
+
+			<h1>1. Who brings the Avengers together?</h1>
+			<!-- Nick Fury -->
+				<input type="radio" name="q1" value="Nick Fury">Nick Fury 
+				<input type="radio" name="q1" value="Agent Caulson">Agent Caulson 
+				<input type="radio" name="q1" value="Tony Stark">Tony Stark
+				<input type="radio" name="q1" value="Steve Rogers">Steve Rogers  
+				
+
+			<h1>2. What is Captain America's shield made of?</h1>
+			<!-- Vibranium -->
+				<input type="radio" name="q2" value="Titanium">Titanium
+				<input type="radio" name="q2" value="Adamantium">Adamantium
+				<input type="radio" name="q2" value="Vibranium">Vibranium
+				<input type="radio" name="q2" value="Carbon Fiber">Carbon Fiber 
+
+
+
+			<h1>3. What causes Bruce Banner's heroic change into the Hulk?</h1>
+			<!-- Gamma Radiation -->
+				<input type="radio" name="q3" value="Nuclear Explosion">Nuclear Explosion
+				<input type="radio" name="q3" value="Gamma Radiation">Gamma Radiation
+				<input type="radio" name="q3" value="Genetic Mutation">Genetic Mutation
+				<input type="radio" name="q3" value="Super Soldier Serum">Super Soldier Serum
+
+
+			<h1>4. What is the name of Thor's Hammer?</h1>
+			<!-- Mjolnir -->
+				<input type="radio" name="q4" value="Ragnarok">Ragnarok 
+				<input type="radio" name="q4" value="Fenrir">Fenrir
+				<input type="radio" name="q4" value="Mjolnir">Mjolnir 
+				<input type="radio" name="q4" value="Storm Breaker">Storm Breaker
+
+
+			<h1>5. Black Panther is the king of which fictional place?</h1>
+			<!-- Wakanda  -->
+				<input type="radio" name="q5" value="Wakanda">Wakanda 
+				<input type="radio" name="q5" value="Sokovia">Sokovia 
+				<input type="radio" name="q5" value="Gulmira">Gulmira 
+				<input type="radio" name="q5" value="Madripoor">Madripoor 
+			
+			<h1>6. What is Hawkeye's real name?</h1>
+			<!-- Clint Barton -->
+				<input type="radio" name="q6" value="Maria Hill">Maria Hill 
+				<input type="radio" name="q6" value="Clint Barton">Clint Barton
+				<input type="radio" name="q6" value="Bucky Barnes">Bucky Barnes 
+				<input type="radio" name="q6" value="Scott Lang">Scott Lang 
+				
+
+			<h1>7. What does S.H.I.E.L.D. stand for?</h1>
+			<!-- Strategic Homeland Intervention Enforcement and Logistics Division -->
+				<input type="radio" name="q7" value="Strategic Homeland Intervention Enforcement and Logistics Division">Strategic Homeland Intervention Enforcement and Logistics Division
+				<input type="radio" name="q7" value="Strategic Homeland Intervention Enforcement and Logistics Department">Strategic Homeland Intervention Enforcement and Logistics Department
+				<input type="radio" name="q7" value="Strategic Homeland Intervention Enforcement and Logistics Division">Strategic Homeland Intervention Espionage and Logistics Division 
+				<input type="radio" name="q7" value="Nothing">Nothing
+
+			<h1>8. Which evil organization was revealed to control S.H.I.E.L.D.?</h1>
+			<!-- Hydra -->
+				<input type="radio" name="q8" value="Cerberus">Cerberus 
+				<input type="radio" name="q8" value="Hydra">Hydra 
+				<input type="radio" name="q8" value="Sinister Six">Sinister Six 
+				<input type="radio" name="q8" value="Legion of Doom">Legion of Doom 
+
+			<h1>9. According to Tony Stark, who is the strongest Avenger?</h1>
+			<!-- Hulk -->
+				<input type="radio" name="q9" value="Hulk">Hulk 
+				<input type="radio" name="q9" value="Thor">Thor
+				<input type="radio" name="q9" value="Captian America">Captain America
+				<input type="radio" name="q9" value="Black Widow">Black Widow
+
+			<h1>10. Which Inifinity Stone has NOT made an appearance in the Marvel Cinematic Universe?</h1>
+			<!-- Soul Stone -->
+				<input type="radio" name="q10" value="Time Stone">Time Stone
+				<input type="radio" name="q10" value="Reality Stone">Reality Stone 
+				<input type="radio" name="q10" value="Soul Stone">Soul Stone 
+				<input type="radio" name="q10" value="Space Stone">Space Stone 
+
+
+				<br>
+
+
+			<button id = done_button>Done!</button>
+
+		</div>
+
+
+
+
+		<!-- End of the game -->
+		<div id = end_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo">Marvel Trivia</h1>
+
+			<h1 id = "done">All Done!</h1>
+			<br>
+
+			<h1>Correct Answers: <span id = "correct_answers">0</span></h1>
+			<h1>Incorrect Answers: <span id = wrong_answers>0</span></h1>
+			<h1>Unanswered: <span id = "unanswered">0</span></h1>
+		</div>
+			
+
+
+
+		<!-- Link in jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+		<!-- Link in JavaScript -->
+		<script src="assets/javascript/app.js"></script>
+		
+	</body>
+</html>
